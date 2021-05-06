@@ -16,22 +16,48 @@
     <div style="background: #521717;">
       <div class="row">
         <div class="col-lg-11">
-          <a href="index.html" style="color: #FFFFFF;"><img src="images/learning_face.png" height="30px" width="30px" style="margin-top: 4px; margin-left: 4px; margin-bottom: 4px; margin-right: 8px;"/>LEARNING FACE</a>
+          <a href="index.html" style="color: #FFFFFF;"><img src="images/learning_face.png" height="38px" width="38px" style="margin-top: 4px; margin-left: 4px; margin-bottom: 4px; margin-right: 8px;"/>LEARNING FACE</a>
         </div>
         <div class="col-lg-1">
+
           <div style="text-align: right; margin-top: 4px; margin-right: 4px;">
-            <div class="dropdown">
-              <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+            <div class="dropdown" style="text-align: right; margin-top: 4px; margin-right: 4px; padding-bottom: 4px;">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="images/usu.png" height="20px" width="20px">
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Configuración</a>
-                <a class="dropdown-item" href="#">Cerrar sesión</a>
-              </div>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="config.html">Configuración</a></li>
+                <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+              </ul>
             </div>
+
           </div>
+
         </div>
+
       </div>
+    </div>
+
+    <div style="margin-top: 15px; margin-bottom: 10px;"><h3 style="font-weight: 600;">Configuración</h3></div>
+
+    <div class="container">
+      <div style="margin-top: 100px; padding-bottom: 45px; background-color: #f2f2f2; opacity: 65%; width: 100%;">
+        <div>
+            <h3 style="color: #000000;">Tiempo límite para asistencia</h3>
+        </div>
+
+        
+        <div style="text-align: center; margin-top: 15px;">
+            <a asp-controller="Home" asp-action="Login"> 
+            <button type="button" class="btn btn-secondary">Let's start</button>
+            </a>
+        </div>
+
+        <div style="text-align: center; margin-top: 15px;">
+            <a asp-controller="Index" asp-action="Index">Continuar como invitado</a>
+        </div>
+    </div>
     </div>
     
   </body>
