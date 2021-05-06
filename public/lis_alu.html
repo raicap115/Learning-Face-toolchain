@@ -96,8 +96,12 @@
                     <label class="btn btn-outline-danger" for="btnradio2">Faltó</label>
                     
                     <!-- MODAL DE JUSTIFICACIÓN -->
-                    <a href="#"><input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                    <label class="btn btn-outline-warning" for="btnradio3">Justificó</label></a>
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                      <input type="radio" class="btn-check" name="btnradio"  autocomplete="off" >
+                      <label class="btn btn-outline-warning">Justificó</label>
+                    </button>                     
+
+
                   </div>
                 </div>
               </td>
@@ -115,8 +119,10 @@
                     <label class="btn btn-outline-danger" for="btnradioo2">Faltó</label>
                     
                     <!-- MODAL DE JUSTIFICACIÓN -->
-                    <a href="#"><input type="radio" class="btn-check" name="btnradioo" id="btnradioo3" autocomplete="off">
-                    <label class="btn btn-outline-warning" for="btnradioo3">Justificó</label></a>
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                      <input type="radio" class="btn-check" name="btnradio"  autocomplete="off" >
+                      <label class="btn btn-outline-warning">Justificó</label>
+                    </button> 
                   </div>
                 </div>
               </td>
@@ -134,8 +140,10 @@
                     <label class="btn btn-outline-danger" for="btnradiooo2">Faltó</label>
                     
                     <!-- MODAL DE JUSTIFICACIÓN -->
-                    <a href="#"><input type="radio" class="btn-check" name="btnradiooo" id="btnradiooo3" autocomplete="off">
-                    <label class="btn btn-outline-warning" for="btnradiooo3">Justificó</label></a>
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                      <input type="radio" class="btn-check" name="btnradio"  autocomplete="off" >
+                      <label class="btn btn-outline-warning">Justificó</label>
+                    </button>  
                   </div>
                 </div>
               </td>
@@ -145,6 +153,31 @@
       </div>
 
     </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">JUSTIFICACIÓN DE INASISTENCIA</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                <label for="message-text" class="col-form-label">¿Cúal fue el motivo?</label>
+                <textarea class="form-control" id="message-text"></textarea>
+            </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Justificar</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            
+        </div>
+        </div>
+    </div>
+    </div>
+
 
   </body>
 
